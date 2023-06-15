@@ -6,10 +6,12 @@
     "@azure/msal-browser": "^2.37.1",
     "@azure/msal-react": "^1.5.8",
     "@headlessui/react": "^1.7.15",
+    "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
     "flowbite-react": "^0.4.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
@@ -18,6 +20,7 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
+    "use-debounce": "^9.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

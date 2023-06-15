@@ -45,7 +45,7 @@ const handleProfileEdit = () => {
         <Link to='help' className='p-4 font-bold hover:text-blue-600 cursor-pointer'>Help center</Link>
       </div>
       <div className=' flex items-center justify-between'>
-        <button className='text-4 p-8 w-full py-2 bg-blue-400 rounded-lg mx-2'>English</button>
+        <button className='text-4 p-8 w-full py-2 bg-[#1e40af] text-white hover:bg-blue-600 rounded-lg mx-2'>English</button>
         <AuthenticatedTemplate>
         <button  onClick={handleProfileEdit}>{activeAccount && activeAccount.idTokenClaims.given_name ? activeAccount.idTokenClaims.given_name : 'Unknown'} </button>
         <Dropdown />
@@ -53,7 +53,7 @@ const handleProfileEdit = () => {
         
         </AuthenticatedTemplate>
         <UnauthenticatedTemplate>
-        <button onClick={handleLoginRedirect} className='text-4 w-full p-8 py-2 bg-red-400 rounded-lg'>Login</button>
+        <button onClick={handleLoginRedirect} className='text-4 w-full p-8 py-2 bg-red-600 hover:bg-[#ff3030] rounded-lg text-white'>Login</button>
        
        
         </UnauthenticatedTemplate>
