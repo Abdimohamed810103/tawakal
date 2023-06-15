@@ -6,6 +6,7 @@ import { MsalProvider, useMsal } from '@azure/msal-react';
 import { EventType } from '@azure/msal-browser';
 import { b2cPolicies } from './authConfig';
 import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 
 const Pages = () => {
   /**
@@ -97,6 +98,7 @@ const  App = ({ instance }) => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/profile" element={<Profile />} />
 
     </Routes>
    
