@@ -7,6 +7,7 @@ import { EventType } from '@azure/msal-browser';
 import { b2cPolicies } from './authConfig';
 import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
+import ClientUpdate from './component/ClientUpdate';
 
 const Pages = () => {
   /**
@@ -99,6 +100,7 @@ const  App = ({ instance }) => {
       <Route path="/" element={<Home />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/edit" element={<ClientUpdate />} />
 
     </Routes>
    

@@ -20,6 +20,7 @@ const Navbar = () => {
     let activeAccount;
     if (instance) {
       activeAccount = instance.getActiveAccount();
+      console.log(activeAccount)
   }
   
   const handleLoginRedirect = () => {
@@ -47,7 +48,7 @@ const handleProfileEdit = () => {
       <div className=' flex items-center justify-between'>
         <button className='text-4 p-8 w-full py-2 bg-[#1e40af] text-white hover:bg-blue-600 rounded-lg mx-2'>English</button>
         <AuthenticatedTemplate>
-        <button  onClick={handleProfileEdit}>{activeAccount && activeAccount.idTokenClaims.given_name ? activeAccount.idTokenClaims.given_name : 'Unknown'} </button>
+        <button  onClick={handleProfileEdit}>{activeAccount && activeAccount.idTokenClaims.id ? activeAccount.idTokenClaims.id : 'Unknown'} </button>
         <Dropdown />
         <button onClick={handleLogoutRedirect}>Logout</button>
         
